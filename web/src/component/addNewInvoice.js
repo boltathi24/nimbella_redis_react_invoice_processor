@@ -12,6 +12,7 @@ class NewInvoice extends React.Component {
         this.props.parentCallback(invoice);
         event.preventDefault();
         this.setState({submitted : true});
+        this.clearValue()
     }
     state={
 amount:"",
