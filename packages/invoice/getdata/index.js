@@ -24,12 +24,12 @@ async function main(args) {
           message: "Exception has occured while processing",
           exception: e.message,
           success: false,
+         
         }
-        response.statusCode=400;
-    return  response;
+        response.statusCode=400
+    
 }
+return  response;
 }
-
-
 
 exports.main = main
